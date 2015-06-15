@@ -1,0 +1,36 @@
+{
+  "name": "popin",
+  "version": "2.2.0",
+  "description": "Create your custom popin",
+  "main": "lib/popin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "popin",
+    "vanillajs",
+    "custom"
+  ],
+  "author": {
+    "name": "Alexis Branlant"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^9.0.8",
+    "gulp": "^3.8.11",
+    "gulp-babel": "*",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-uglify": "^1.2.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "_npmVersion": "2.8.3",
+  "_nodeVersion": "1.8.1",
+  "dependencies": {
+    "gulp-minify-css": "^1.1.6",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0"
+  }
+}

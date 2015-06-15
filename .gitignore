@@ -1,0 +1,6 @@
+demo
+*.DS_Store*
+node_modules
+.publish
+.git
+.idea
