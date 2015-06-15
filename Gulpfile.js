@@ -19,15 +19,13 @@ gulp.task('server', function() {
   });
 });
 
-gulp.task('build', ['sass'], function() {
-  return browserify({
-        entries: './lib/popinInstance.js',
-        debug: true
-      })
-      .transform(babelify)
-      .bundle()
-      .pipe(source('popin.js'))
-      .pipe(gulp.dest('./lib'));
+
+gulp.task('build', function() {
+    return gulp.src('./lib/popin.es6.js')
+        .pipe(babel())
+        .pipe(uglify())
+        .pipe(concat('popin.js'))
+        .pipe(gulp.dest('./lib'));
 })
 
 //Compilation des fichiers .scss
