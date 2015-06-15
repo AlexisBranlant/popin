@@ -1,6 +1,6 @@
 {
   "name": "popin",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Create your custom popin",
   "main": "lib/popin.js",
   "scripts": {
@@ -24,13 +24,13 @@
     "gulp-connect": "^2.2.0",
     "gulp-jsdoc": "^0.1.4",
     "gulp-uglify": "^1.2.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0"
   },
   "_npmVersion": "2.8.3",
   "_nodeVersion": "1.8.1",
   "dependencies": {
-    "gulp-minify-css": "^1.1.6",
-    "gulp-sass": "^2.0.1",
-    "gulp-uglify": "^1.2.0"
   }
 }
