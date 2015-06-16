@@ -47,7 +47,7 @@ var defaultParams = {
 #### Use custom init params
 ```js
 var popinInstance = new Popin({
-  overlay:false //to desable overlay for all popins
+  overlay:false //to disable overlay for all popins
 });
 ```
 
@@ -60,13 +60,14 @@ var defaultOptions = {
 
 #### Use custom init options
 You can use a custom class to trigger your popin, in the initialisation you just need to pass an object like this :
-
+d
 ```js
 popinInstance.init({
   className:'customClass', //element in DOM to trigger click
   overlayVisible : false, //disable the overlay for the popin
   closeButton:false, //if you don't need close button
-  content:'<div><div class="popin-header"></div>popin ajax</div>'//popin content not in default DOM loaded
+  content:'<div><div class="popin-header"></div>popin ajax</div>',//popin content not in default DOM loaded,
+  buttonSticky:true //to sticky the top of the popin at the top of the button
 });
 ```
 ```html
