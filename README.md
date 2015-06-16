@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 ```
+#### CSS
+Copy the styles in `styles/popin.scss` in your css or import the file in your scss.
+
 
 #### Defaults parameters
 var defaultParams = {
