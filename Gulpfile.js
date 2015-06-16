@@ -12,7 +12,7 @@ minifyCSS  = require('gulp-minify-css');
 
 
 
-gulp.task('server', function() {
+gulp.task('server', ['watch'],function() {
   connect.server({
     root: './demo/',
     port: 1337
@@ -37,7 +37,7 @@ gulp.task('sass', function(){
       .pipe(gulp.dest('./demo/'));
 });
 
-gulp.task('demo', function() {
+gulp.task('demo',['build'], function() {
   browserify({
     entries: './demo/app.js',
     debug: true
@@ -49,7 +49,7 @@ gulp.task('demo', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(['styles/*.scss','lib/*.js','demo/*.js'], ['build', 'demo']);
+  gulp.watch(['styles/*.scss','lib/*.js','demo/*.js'], ['demo']);
 });
 
 gulp.task('default', ['build', 'server', 'demo', 'watch']);
