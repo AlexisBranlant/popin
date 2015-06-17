@@ -1,6 +1,6 @@
 {
   "name": "popin",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Create your custom popin",
   "main": "lib/popin.js",
   "scripts": {
