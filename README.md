@@ -60,7 +60,6 @@ var defaultOptions = {
 
 #### Use custom init options
 You can use a custom class to trigger your popin, in the initialisation you just need to pass an object like this :
-d
 ```js
 popinInstance.init({
   className:'customClass', //element in DOM to trigger click
@@ -72,6 +71,17 @@ popinInstance.init({
 ```
 ```html
 <a href="#" class="customClass" data-target="popin-beta">test popin</a>
+```
+
+#### callback
+You have 4 callback options
+```js
+popinInstance.init({
+  beforeOpen: function() {}, //trigger before the openning
+  afterOpen : function() {}, //trigger when the popin is visible in the screen
+  beforeClose:function() {},  //trigger before the closing
+  afterClose:function() {} //trigger when the popin is out of screen
+});
 ```
 
 ## Support 
