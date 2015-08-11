@@ -23,7 +23,7 @@ gulp.task('server',function() {
 gulp.task('build', function() {
     return gulp.src('./lib/popin.es6.js')
         .pipe(babel())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(concat('popin.js'))
         .pipe(gulp.dest('./lib'));
 })
