@@ -12,7 +12,7 @@ minifyCSS  = require('gulp-minify-css');
 
 
 
-gulp.task('server', ['watch'],function() {
+gulp.task('server',function() {
   connect.server({
     root: './demo/',
     port: 1337
@@ -23,7 +23,7 @@ gulp.task('server', ['watch'],function() {
 gulp.task('build', function() {
     return gulp.src('./lib/popin.es6.js')
         .pipe(babel())
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('popin.js'))
         .pipe(gulp.dest('./lib'));
 })
@@ -52,4 +52,4 @@ gulp.task('watch', function() {
   gulp.watch(['styles/*.scss','lib/*.js','demo/*.js'], ['demo']);
 });
 
-gulp.task('default', ['build', 'server', 'demo', 'watch']);
+gulp.task('default', [ 'demo','server','watch']);
